@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto_Condensed } from "next/font/google";
 
 import "./globals.css";
@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "Services to assist upcoming and existing project to scale to new heights | Coin Value",
   description: "We are a professional team of experts that specialises in project development, growth, community management.",
 };
+
+export const viewport: Viewport = {
+  themeColor: "#ffb803ed"
+}
 
 export default function RootLayout({
   children,

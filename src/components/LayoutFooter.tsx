@@ -3,7 +3,7 @@ import Socials from "./Socials";
 
 export default function LayoutFooter() {
   return (
-    <footer className="flex flex-col items-center space-y-8 bg-gradient-to-t from-black to-black/10 p-32 md:flex-row">
+    <footer className="flex flex-col items-center space-y-8 bg-gradient-to-t from-black to-black/10 p-24 md:flex-row">
       <div className="self-center">
         <Image
           src="/favicon.ico"

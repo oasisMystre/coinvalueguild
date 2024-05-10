@@ -4,7 +4,7 @@ export default function HomeServiceSection() {
   return (
     <div
       id="services"
-      className="flex flex-col space-y-8"
+      className="flex flex-col space-y-8 overflow-x-hidden"
     >
       <div className="flex flex-col space-y-4">
         <div className="px-8 md:px-16">
