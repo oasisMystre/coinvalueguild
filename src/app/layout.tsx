@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import type { Metadata, Viewport } from "next";
-import { Roboto_Condensed } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 import "./globals.css";
 
 import LayoutHeader from "@/components/LayoutHeader";
 import LayoutFooter from "@/components/LayoutFooter";
 
-const inter = Roboto_Condensed({ subsets: ["latin"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["400", "900"] });
 
 export const metadata: Metadata = {
   title: "Services to assist upcoming and existing project to scale to new heights | Coin Value",
