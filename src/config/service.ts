@@ -8,6 +8,7 @@ export const services = [
   "Techical development",
   "Graphics design",
   "Promotion",
+  "KYC Services",
   "Advistory Services to Project owners",
   "Exchange Listing",
   "Social Media Services"
