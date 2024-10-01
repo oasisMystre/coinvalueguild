@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.animate-marquee {
-  animation: 15s marquee linear infinite;
+@layer utilities {
+  @variants responsive {
+    .animate-marquee {
+      animation: 15s marquee linear infinite;
+    }
+
+    .animate-none {
+      animation: none;
+    }
+  }
 }
 
 .animate-jump {
@@ -33,11 +41,11 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+  width: 0;
+  height: 0;
 }
 
 * {
-    scrollbar-width: 0;
-    scrollbar-width: none;
+  scrollbar-width: 0;
+  scrollbar-width: none;
 }

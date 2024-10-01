@@ -10,7 +10,7 @@ export default function HomeServiceSection() {
         <div className="px-8 md:px-16">
           <h1 className="text-4xl font-extrabold">Our Services</h1>
         </div>
-        <div className="animate-marquee flex space-x-4 px-8 md:px-16">
+        <div className="animate-marquee flex space-x-4 px-8 md:px-16 md:overflow-x-scroll md:animate-none">
           {services.map((service, index) => (
             <div
               key={index}
