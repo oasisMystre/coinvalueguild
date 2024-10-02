@@ -5,7 +5,11 @@
 @layer utilities {
   @variants responsive {
     .animate-marquee {
-      animation: 15s marquee linear infinite;
+      animation: linear 15s infinite marquee;
+    }
+
+    .animate-inverse-marquee {
+      animation: linear 15s infinite inverse-marquee;
     }
 
     .animate-none {
@@ -20,11 +24,21 @@
 
 @keyframes marquee {
   from {
-    transform: translateX(-10%);
+    transform: translateX(0%);
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes inverse-marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
   }
 }
 

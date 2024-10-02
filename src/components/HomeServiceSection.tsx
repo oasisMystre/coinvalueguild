@@ -10,17 +10,33 @@ export default function HomeServiceSection() {
         <div className="px-8 md:px-16">
           <h1 className="text-4xl font-extrabold">Our Services</h1>
         </div>
-        <div className="animate-marquee flex space-x-4 px-8 md:px-16 md:overflow-x-scroll md:animate-none">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="shrink-0 bg-white/20 p-2 rounded-2xl"
-            >
-              <div className="capitalize bg-white/20 p-3 rounded-lg">
-                {service}
-              </div>
+        <div className="flex overflow-x-hidden whitespace-no-wrap">
+          <div className="shrink-0 relative">
+            <div className="shrink-0 flex space-x-4 animate-marquee">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="shrink-0 bg-white/20 p-2 rounded-2xl"
+                >
+                  <div className="capitalize bg-white/20 p-3 rounded-lg">
+                    {service}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+            <div className="shrink-0 flex absolute top-0 space-x-4 animate-inverse-marquee">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="shrink-0 bg-white/20 p-2 rounded-2xl"
+                >
+                  <div className="capitalize bg-white/20 p-3 rounded-lg">
+                    {service}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col space-y-4 px-8 md:flex-row md:space-x-4 md:flex-nowrap md:overflow-x-scroll md:px-16">
